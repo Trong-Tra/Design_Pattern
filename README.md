@@ -1,2 +1,18 @@
-# Design_Pattern
-Design Patterns for OOP 
+# Design Pattern Indentify Table
+---
+
+| **Design Pattern**  | **Group**       | **Problem**                                                                 | **Solution**                                                         | **When to Use / How to Recognize**                                       |
+|----------------------|-----------------|-----------------------------------------------------------------------------|-----------------------------------------------------------------------|---------------------------------------------------------------------------|
+| Singleton            | Creational     | Need to ensure a class has only one instance and provide global access.    | Restrict instantiation by controlling it within the class.            | When a single instance of a class is needed, like a configuration manager.|
+| Factory Method       | Creational     | Creating objects without specifying the exact class.                       | Define a method to create objects, letting subclasses decide the type.| When class instantiation varies or depends on runtime parameters.        |
+| Abstract Factory     | Creational     | Need families of related objects without specifying their concrete classes.| Provide an interface to create families of objects.                   | When systems must support multiple families of products.                 |
+| Prototype            | Creational     | Need to copy objects without depending on their classes.                   | Clone objects via a prototype interface.                              | When creating objects is costly, and prototypes can serve as templates.  |
+| Facade               | Structural     | Complex subsystems are difficult to use or manage.                         | Provide a simplified interface to a complex subsystem.                | When you want to simplify interactions with a complex system.            |
+| Adapter              | Structural     | Incompatible interfaces prevent collaboration between classes.             | Bridge mismatched interfaces by creating an adapter class.            | When existing code needs to work with incompatible interfaces.           |
+| Composite            | Structural     | Representing part-whole hierarchies like trees uniformly.                  | Treat individual objects and compositions of objects uniformly.        | When you want to treat leaf and composite nodes the same.                |
+| Proxy                | Structural     | Need a placeholder for another object to control access or add behavior.   | Create a surrogate object that manages access to the real object.     | When you need controlled or lazy access to resources.                    |
+| Observer             | Behavioral     | Need to notify multiple objects about a state change.                      | Define a dependency where observers update automatically.             | When an object changes state and its dependents must be informed.         |
+| Strategy             | Behavioral     | Multiple algorithms are required for a task.                               | Define a family of interchangeable algorithms in separate classes.    | When you want different ways to perform an action, selected at runtime.  |
+| State                | Behavioral     | Object behavior changes based on internal state.                           | Encapsulate state-specific behavior in separate classes.              | When object behavior varies with state, and transitions need management. |
+| Iterator             | Behavioral     | Need a way to access elements of a collection sequentially.                | Provide a standard way to iterate through collections.                | When you need sequential access without exposing internal structure.      |
+| Template             | Behavioral     | Common steps in algorithms need to be reused with variations.              | Define the skeleton of the algorithm in a base class.                 | When you have a fixed process with customizable steps.                    |
